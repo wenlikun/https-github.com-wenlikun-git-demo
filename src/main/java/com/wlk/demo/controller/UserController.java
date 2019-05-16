@@ -30,6 +30,7 @@ public class UserController {
     public void test(){
         System.out.println("test");
         String a = "1";
+        String b = "2";
     }
 
 }
