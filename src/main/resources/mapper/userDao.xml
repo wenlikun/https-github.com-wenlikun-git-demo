@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.wlk.demo.dao.UserDao">
+
+    <sql id="allField">
+      id,user_name ,user_pass, user_phone
+    </sql>
+
+    <select id="getAllUsers" resultType="com.wlk.demo.pojo.User">
+        SELECT
+        <include refid="allField"/>
+        FROM tb_user
+    </select>
+
+    <select id="getOneUser" resultType="com.wlk.demo.pojo.User" parameterType="java.lang.Integer">
+        SELECT
+        <include refid="allField"/>
+        FROM tb_user where id=#{id}
+    </select>
+
+</mapper>
+
