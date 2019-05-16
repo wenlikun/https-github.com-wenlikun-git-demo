@@ -25,4 +25,10 @@ public class UserController {
         return userService.getOneUser(id);
     }
 
+
+    @RequestMapping("/test")
+    public void test(){
+
+    }
+
 }
