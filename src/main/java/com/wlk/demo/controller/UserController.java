@@ -29,6 +29,7 @@ public class UserController {
     @RequestMapping("/test")
     public void test(){
         System.out.println("test");
+        String a = "1";
     }
 
 }
