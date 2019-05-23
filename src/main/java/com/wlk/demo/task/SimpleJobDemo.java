@@ -8,9 +8,21 @@ import java.util.Date;
 
 @Component
 public class SimpleJobDemo implements SimpleJob {
+
+
+
+
+
+
     @Override
     public void execute(ShardingContext shardingContext) {
         System.out.println("job任务在执行"+ shardingContext.getShardingItem()+
         '-'+shardingContext.getShardingParameter());
+
     }
+
+
+
+
+
 }
