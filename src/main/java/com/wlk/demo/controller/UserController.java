@@ -15,6 +15,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
     @RequestMapping("/selectAll")
     public List<User> getAll(){
         return userService.getAllUsers();
