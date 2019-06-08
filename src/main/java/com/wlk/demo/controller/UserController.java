@@ -30,5 +30,8 @@ public class UserController {
     public void test(){
 
     }
-
+    @RequestMapping("/tests")
+    public String gettest(){
+        return "hahhaha";
+    }
 }
